@@ -1,0 +1,58 @@
+.about{
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 1360px) {
+        margin-top: -215px;
+    }
+    .section-title{
+        line-height: 1.3;
+        margin-bottom: 22px;
+    }
+    &__sub-title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 0.04em;
+        color:$corpColor;
+        margin-top: 18px;
+        display: inline-block;
+    }
+    &__card-wrap{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media screen and (min-width: 768px) {
+           flex-direction: row;
+        }
+    }
+    &__card-item{
+        width: 100%;
+        padding: 20px 26px;
+        background: $bgCart;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 20px) / 2);
+        }
+        @media screen and (min-width: 1024px) {
+            width: calc((100% - 20px) / 2);
+            padding: 40px 56px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+    }
+    &__card-title{
+        font-size: 18px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        @media screen and (min-width: 768px) {
+            height: 58px;
+            font-size: 20px;
+        }
+        @media screen and (min-width: 1360px) {
+            height: 28px;
+        }
+    }
+}

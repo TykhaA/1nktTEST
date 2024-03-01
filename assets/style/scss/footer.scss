@@ -1,0 +1,106 @@
+.footer {
+    &__header{
+        padding: 29px 0;
+        border-bottom: 1px solid #2A2B33;
+        @media screen and (min-width: 768px) {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .header__logo{
+            @media screen and (max-width: 768px) {
+               text-align: center;
+            }
+        }
+        .social-list{
+            @media screen and (max-width: 768px) {
+               margin-top: 20px;
+               justify-content: center;
+            }
+        }
+    }
+    &__body{
+        border-bottom: 1px solid #2A2B33;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 90px;
+        }
+        padding: 35px 0;
+        .contact-list{
+            @media screen and (max-width: 768px) {
+                margin: auto;
+                width: fit-content;
+             }
+            &__item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 16px;
+                color: $title;
+                font-size: 16px;
+            }
+            @media screen and (min-width: 768px) {
+              min-width: 318px;
+            }
+            >:last-child{
+                align-items: baseline;
+                svg{
+                    position: relative;
+                    top: 6px;
+                }
+            }
+        }
+        .nav{
+            @media screen and (min-width: 768px) {
+               margin-top: 0;
+            }
+        }
+        .nav__item{
+            text-align: center;
+            @media screen and (min-width: 768px) {
+                text-align: left;
+            }
+        }
+        .nav__item-link{
+            padding: 0;
+        }
+        .nav__list{
+            flex-direction: column;
+            gap: 14px;
+            @media screen and (max-width: 768px) {
+                margin-top: 20px;
+            }
+        }
+    }
+    &__bottom{
+        padding: 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media screen and (min-width: 1024px){
+            font-size: 16px;
+        }
+        .bottom-list{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 24px;
+            }
+        }
+    }
+}
